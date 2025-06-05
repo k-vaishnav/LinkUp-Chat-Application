@@ -56,7 +56,7 @@ color:green
 .messages {
   flex: 1;
   overflow-y: auto;
- background-image: url("../../../background\ image.png");
+ background-image: url("/images/background-image.png");
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
