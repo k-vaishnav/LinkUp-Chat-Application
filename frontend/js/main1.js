@@ -19,7 +19,7 @@ form.addEventListener('submit', async (e) => {
 
   try {
     // fetch('http://localhost:3000/api/auth/register') 
-    console.log(`${API_BASE}/api/auth/register`)
+    
     const res = await fetch(`${API_BASE}/api/auth/register`, { // to pass data to the server
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

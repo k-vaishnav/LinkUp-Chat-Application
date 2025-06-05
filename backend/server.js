@@ -26,6 +26,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname , "../frontend")));
 
 
+
 //  2.Create Socket server.
 const io = new Server(server, {
     cors: {

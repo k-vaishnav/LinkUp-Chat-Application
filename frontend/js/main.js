@@ -7,6 +7,9 @@ function showAlert(message, type = "danger") {
   <div class="alert alert-${type}">${message}</div>
   `;
   }
+ const API_BASE = window.location.hostname.includes('localhost') || window.location.port === "5500"
+  ? 'http://localhost:3000'
+  : '';
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -14,7 +17,7 @@ form.addEventListener("submit", async (e) => {
   const password = form.password.value;
   try {
     // fetch("http://localhost:3000/api/auth/login")
-    const res = await fetch("/api/auth/login", { // to pass data to the server
+    const res = await fetch(`${API_BASE}/api/auth/login`, { // to pass data to the server
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
