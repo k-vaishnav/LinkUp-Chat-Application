@@ -1,4 +1,5 @@
-const socket = io("http://localhost:3000");
+// const socket = io("http://localhost:3000");
+const socket = io()
 // Unlock audio playback by waiting for first user interaction
 document.addEventListener("click", () => {
   const audio = document.getElementById("notification-sound");

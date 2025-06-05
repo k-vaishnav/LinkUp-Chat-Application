@@ -13,8 +13,14 @@ form.addEventListener('submit', async (e) => {
   const username = form.username.value;
   const password = form.password.value;
   const email = form.email.value;
+  const API_BASE = window.location.hostname.includes('localhost') || window.location.port === "5500"
+  ? 'http://localhost:3000'
+  : '';
+
   try {
-    const res = await fetch('http://localhost:3000/api/auth/register', { // to pass data to the server
+    // fetch('http://localhost:3000/api/auth/register') 
+    console.log(`${API_BASE}/api/auth/register`)
+    const res = await fetch(`${API_BASE}/api/auth/register`, { // to pass data to the server
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password ,email })

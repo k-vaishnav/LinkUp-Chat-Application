@@ -9,6 +9,7 @@ import path from "path";
 import { connection } from "./config.js";
 import { router } from "./routes/auth.route.js";
 import { Message } from "./model/messageSchema.js";
+import { fileURLToPath } from 'url';
 
 
 const app = express();
@@ -18,7 +19,13 @@ app.use(express.json());
 app.use(cors());
 // 1.create the server using http
 const server = http.createServer(app);
-app.use(express.static(path.join(path.resolve() , "../frontend")));
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(express.static(path.join(__dirname , "../frontend")));
+
+
 //  2.Create Socket server.
 const io = new Server(server, {
     cors: {
@@ -116,7 +123,7 @@ socket.on("logout", () => {
     });
 });
 // listen to the server
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log("Server is listening on port 3000.");
     connection();
 });
