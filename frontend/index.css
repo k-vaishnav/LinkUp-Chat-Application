@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(100deg, #ff8c94, #ffd3b6);
+}
+
+.navbar {
+  background-color: rgba(122, 220, 239, 0.537);
+  padding: 0.95rem 0.85rem;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: visible;
+}
+.logo {
+  margin-right:-10px !important;
+  margin-left: -10px !important;
+}
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: linear-gradient(
+    90deg,
+    #ff416c,
+    #853c92
+  ); /* vibrant pink-orange */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 0.25rem 0.5rem;
+}
+.navbar-brand:hover {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+}
+
+.navbar-nav .nav-link {
+  list-style: none;
+  text-decoration: none;
+  color: #712881 !important; /* soft pale pink */
+  margin-right: 1rem;
+  font-weight: 600;
+  font-size: 1.42em;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #570a69 !important; /* soft highlight on hover */
+  text-decoration: underline;
+  transform: scale(1.25);
+}
+
+.desc h2{
+    color:#712881;
+    font-size: 3.5rem !important;
+    text-shadow:0 3px 3px  ;
+    letter-spacing: 1px;
+}
+.desc p{
+    color:#712881;
+    font-size: 3rem !important;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.carousel-img {
+  display: block;
+  margin: 0 auto;
+
+  height: 50vh;
+  object-fit: contain;
+  margin-bottom: 4rem;
+  overflow: hidden; /* <- Add this */
+}
+
