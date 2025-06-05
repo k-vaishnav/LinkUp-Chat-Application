@@ -148,7 +148,8 @@ socket.on("typingUpdate", (typingUsers) => {
 const logout = document.querySelector(".logout");
 logout.addEventListener("click", () => {
   socket.emit("logout")
-  window.location.href = "../../../frontend/login.html";
+  // window.location.href = "../../../frontend/login.html";
+  window.location.href = "/login.html";
 })
 // Render message to the list
 
