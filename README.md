@@ -8,9 +8,8 @@
 
 LinkUp is a **full‑stack real‑time chat application** built using **Node.js, Express, MongoDB, and Socket.IO**. It supports user authentication, persistent messaging, typing indicators, online user tracking, and a clean Bootstrap-based UI.
 
-This project is designed as a **resume + GSoC / internship‑ready project**, showcasing real‑world backend architecture, real‑time systems, authentication, and clean frontend integration.
+This project is designed as a **resume-ready, production-style application**, showcasing real-world backend architecture, real-time systems, authentication, and scalable design patterns expected from entry-level full-time engineers.
 
----
 
 🌐 Live Demo: https://linkup-8s9r.onrender.com 
 ⚠️ Note: Initial load may take a few seconds due to free-tier hosting.
