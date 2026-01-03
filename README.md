@@ -198,7 +198,7 @@ http://localhost:3000
 
 ---
 
-## 🎯 Why This Project Is GSoC / Internship Ready
+## 🎯 Why This Project Is Placement-Ready
 
 This project demonstrates:
 
